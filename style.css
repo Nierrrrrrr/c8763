@@ -1,0 +1,72 @@
+.character {
+  width: 100%;
+  height: 1000px;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+.animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.vert { transform-origin: center bottom; }
+.hori { transform-origin: 0% 50%; }
+.diag-left { transform-origin: 100% 100%; }
+.diag-right { transform-origin: 100% 0%; }
+
+.character-8, .fill-8, .fill-ex-8, .edge-8 {
+  transform: translateX(60px);
+}
+
+.character-7, .fill-7, .edge-7 {
+  transform: translateX(120px);
+}
+
+.character-6, .fill-6, .edge-6 {
+  transform: translateX(185px);
+}
+
+.character-3, .fill-3, .edge-3 {
+  transform: translateX(245px);
+}
+
+.character-4 {
+  transform: translateX(-1px) translateY(60px) scale(0.5);
+}
+
+.character-d {
+  transform: translateX(75px) translateY(60px) scale(0.5);
+}
+
+.character-x {
+  transform: translateX(168px) translateY(60px) scale(0.5);
+}
+
+.fill, .fill-ex, .line, .square, .stripes, .text {
+  opacity: 0;
+}
+
+.fill-ex {
+  color: black;
+  stroke: #F9C100;
+}
+
+#container
+{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:  100%; /*or 70%, or what you want*/
+  height: 100vh; /*or 70%, or what you want*/
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
